@@ -58,9 +58,27 @@ public class sexta {
         contadoryasmin++;
         contadorjulya = 0;
     }
-}
-}
 
+            // primeira iteração do lço é sempre executada
+            do{
+                System.out.println("Diga me algo: ");
+                valor = entrada.nextLine();
+            }while (!valor.equalsIgnoreCase("algo"));
+            //demais operações do laço só são executadas se a condição for verdadeira
+            entrada.close();
+
+        Scanner scanner = new Scanner(System.in);
+        int numero = scanner.nextInt();
+        System.out.println(numero);
+
+        try{
+            int number = scanner.nextInt();
+            System.out.println(number);
+        }catch (Exception e){
+            System.out.println("Digite apenas numeros: ");
+        }
+    }
+}
 
 
 
