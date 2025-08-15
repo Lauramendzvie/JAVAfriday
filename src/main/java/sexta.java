@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class sexta {
     public static void main(String[] args) {
 
-            Scanner entrada = new Scanner(System.in);
-            String valor = "";
+        Scanner entrada = new Scanner(System.in);
+        String valor = "";
 
             /* vez que o usuário digitar algo
             diferente de sair, o código continua,
@@ -22,13 +22,13 @@ public class sexta {
         /* só se utiliza para tipo primitivo de dados,
         int, double, boolean e etc */
 
-        while(!valor.equalsIgnoreCase("sair")) {
+        while (!valor.equalsIgnoreCase("sair")) {
             System.out.print("Digite algo:");
             valor = entrada.nextLine();
         }
 
-        int contador =0, acumulador=0;
-        while (contador<5){
+        int contador = 0, acumulador = 0;
+        while (contador < 5) {
             System.out.println(contador);
             contador++;
             System.out.print("digite um numero: ");
@@ -39,17 +39,27 @@ public class sexta {
 
         }
 
-                for (int i = 1; i <= 10; i++) {
-                    System.out.println("Tabuada do " + i + ":");
-                    for (int j = 1; j <= 10; j++) {
-                        System.out.printf("%d x %d = %2d%n", i, j, (i * j));
-                    }
-                    System.out.println();
-                }
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("Tabuada do " + i + ":");
+            for (int j = 1; j <= 10; j++) {
+                System.out.printf("%d x %d = %2d%n", i, j, (i * j));
             }
+            System.out.println();
         }
 
+    int contadoryasmin = 0, contadorjulya = 1;
+            while(contadoryasmin <=10)
 
+    {
+        while (contadorjulya <= 10) {
+            System.out.printf("%d x %d = %2d%n", contadoryasmin, contadorjulya, (contadoryasmin * contadorjulya));
+            contadorjulya++;
+        }
+        contadoryasmin++;
+        contadorjulya = 0;
+    }
+}
+}
 
 
 
